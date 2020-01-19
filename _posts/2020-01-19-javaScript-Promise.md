@@ -48,7 +48,7 @@ function fun2(){
  延时执行函数得到执行。。。
  time 1579442314592
 ```
-	<br />代码分析：函数fun2返回了一个Promise对象，构造Promise对象时传入了一个函数，函数使用setTimeout模仿了一个异步操作。延时1秒后执行，并调用resolve并传入参数time改变Promise的状态。
+<br />代码分析：函数fun2返回了一个Promise对象，构造Promise对象时传入了一个函数，函数使用setTimeout模仿了一个异步操作。延时1秒后执行，并调用resolve并传入参数time改变Promise的状态。
 <a name="rgkOi"></a>
 ## 1.4 更多使用
 <a name="ax9j1"></a>
@@ -77,7 +77,7 @@ function fun2(){
  延时执行函数得到执行。。。
  reject time 1579443673344
 ```
-	<br />（2）使用catch
+<br />（2）使用catch
 
 ```javascript
 function fun2(){
@@ -144,7 +144,7 @@ function fun1(){
  fun3
  ["fun1", "fun2", "fun3"]
 ```
-	<br />Promise.race([])与all类似也是传入一个Promise数组，数组内任意一个Promise对象执行完成就执行resolve函数，未完成的Promise对象将不会得到执行resolve函数的机会，常用于竞争型任务。
+<br />Promise.race([])与all类似也是传入一个Promise数组，数组内任意一个Promise对象执行完成就执行resolve函数，未完成的Promise对象将不会得到执行resolve函数的机会，常用于竞争型任务。
 
 ```javascript
 Promise.race([fun1(),fun2(),fun3()])
